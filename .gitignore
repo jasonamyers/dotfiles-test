@@ -33,3 +33,6 @@ htmlcov
 log/
 db/
 venv/
+virtualenv/health
+virtualenv/docs
+virtualenv/GlucoseTrack
