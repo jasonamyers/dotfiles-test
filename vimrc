@@ -69,7 +69,7 @@ set smarttab
 set t_Co=256
 if has("gui_running")
     " See ~/.gvimrc
-    set guifont=Menlo:h14.00  " use this font
+    set guifont=Source\ Code\ Pro\ for\ Powerline:h14.00  " use this font
     set background=dark   " adapt colors for background
     set guioptions-=T
     set list 
@@ -88,7 +88,7 @@ else
     let g:solarized_visibility="high"
     let g:solarized_contract="high"
     colorscheme solarized
-    set guifont=Menlo:h14.00  " use this font
+    set guifont=Source\ Code\ Pro\ for\ Powerline:h14.00  " use this font
 endif
 
 if has("gui_running")
