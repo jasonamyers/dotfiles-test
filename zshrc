@@ -55,17 +55,15 @@ export HISTCONTROL=ignoreboth
 export HISTIGNORE="&:[ ]*:ls:ll:la:l:cd:pwd:exit:mc:su:df:clear"
 
 export WORKON_HOME=$HOME/.virtualenv
-export VIRTUALENVWRAPPER_PYTHON=/home/jasonamyers/.pythonbrew/pythons/Python-2.7.3/bin/python
+export VIRTUALENVWRAPPER_PYTHON=`which python`
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
 export PROJECT_HOME=$HOME/src
-if [[ -r /home/jasonamyers/.pythonbrew/pythons/Python-2.7.3/bin/virtualenvwrapper.sh ]]; then
-    source /home/jasonamyers/.pythonbrew/pythons/Python-2.7.3/bin/virtualenvwrapper.sh
+if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
+    source /usr/local/bin/virtualenvwrapper.sh
 else
     echo "WARNING: Can't find virtualenvwrapper.sh"
 fi
-[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
-pythonbrew switch 2.7.3
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
