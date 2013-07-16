@@ -22,7 +22,7 @@ alias cleanpyc='find . -type f -name "*.pyc" -delete'
 alias startpost='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias stoppost='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias ppsql='sudo -u postgres psql'
-alias vga='xrandr --output VGA1 --auto --above LVDS1 && xrandr --output LVDS1 --auto'
+alias vga='xrandr --output HDMI1 --auto --above eDP1 && xrandr --output eDP1 --auto'
 
 alias pmr='python manage.py runserver'
 alias pmshell='python manage.py shell'
